@@ -1,4 +1,4 @@
-package model;
+package vista;
 
 import java.awt.Color;
 
@@ -18,9 +18,9 @@ public class VentanaPrincipal extends JFrame {
 	private JLabel textTiempoEstimado;
 	private JProgressBar barraProgreso;
 	
-	public VentanaPrincipal(){
+	public VentanaPrincipal( int x, int y){
 		setSize(500, 320);
-		setLocation(300, 100);
+		setLocation(x, y);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLayout(null);
 		setResizable(false);
@@ -44,7 +44,7 @@ public class VentanaPrincipal extends JFrame {
 	
 	public void estilo() {
 		lblModulo.setBounds(40, 20, 60, 20);
-		textModulo.setBounds(100, 20, 120, 20);
+		textModulo.setBounds(100, 20, 200, 20);
 		lblTurno.setBounds(40, 50, 60, 20);
 		textTurno.setBounds(80, 50, 130, 20);
 		lblCliente.setBounds(40, 80, 60, 20);
